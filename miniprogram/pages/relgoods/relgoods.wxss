@@ -1,0 +1,87 @@
+/* pages/relgoods/relgoods.wxss */
+.container{
+  background: linear-gradient(to top right,rgba(202, 32, 245, 0.884),rgba(255, 0, 0, 0.637));
+}
+.showImg{
+  width: 90%;
+  height: 300rpx;
+  padding: 10rpx;
+  margin-left: 2%;
+  border-radius: 10rpx;
+  background-color: #F5F5F5;
+  border: 1rpx solid #CCCCCC;
+}
+.theBackMark{
+  position:relative;
+  top: 100rpx;
+  left: 250rpx;
+  color: rgb(41, 138, 250);
+  letter-spacing: 10rpx;
+}
+.includeform{
+  width: 90%;
+  padding:20rpx 10rpx 20rpx 10rpx;
+  border-radius: 10rpx;
+  margin: auto;
+}
+.theImg{
+  position: relative;
+  top:-100rpx;
+  width: 600rpx;
+  height: 300rpx;
+  z-index: 1000;
+}
+.title{
+  color: #FFFFFF;
+  letter-spacing: 10rpx;
+  padding: 2rpx 5rpx;
+}
+input{
+  width: 530rpx;
+  padding-left: 20rpx;
+  background-color: #FFFFFF;
+  border-radius: 10rpx;
+}
+.line1{
+  width: 100%;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  display: inline-flex;
+  margin-bottom: 20rpx;
+}
+.thepicker{
+  width: 530rpx;
+  padding-left: 20rpx;
+  background-color: #FFFFFF;
+  border-radius: 10rpx;
+}
+.otherMsg{
+  width: 100%;
+  color: #FFFFFF;
+  padding: 5rpx 10rpx 10rpx 10rpx;
+}
+.hand{
+  color: #FFFFFF;
+}
+.booksOtherMsg{
+  width: 90%;
+  height: 100rpx;
+  margin-left: 2%;
+  margin-bottom: 20rpx;
+  border: 1rpx solid #FFFFFF;
+  border-radius: 10rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  letter-spacing: 5rpx;
+  background-color: #FFFFFF;
+}
+.btn-release{
+  width: 50%;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  letter-spacing: 30rpx;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-top: 100rpx;
+  background: linear-gradient(to top right,rgba(202, 32, 245, 0.884),rgba(255, 0, 0, 0.637));
+}

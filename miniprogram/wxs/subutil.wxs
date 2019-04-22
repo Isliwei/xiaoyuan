@@ -1,0 +1,22 @@
+var subname = function (val) {
+  if (val.length == 0 || val == undefined) {
+    return;
+  } else {
+    return val.substring(0, 1) + '❤' + val.slice(-1);
+  }
+}
+module.exports.subname = subname;
+
+var subtime = function (val) {
+  if (val.length == 0 || val == undefined) {
+    return;
+  } else {
+    return val.slice(-8);
+  }
+}
+module.exports.subtime = subtime;
+
+var xyz = function(val){
+  return 1+2+3;
+}
+module.exports.xyz = xyz;

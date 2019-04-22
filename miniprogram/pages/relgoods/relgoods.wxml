@@ -1,0 +1,45 @@
+<!--pages/relgoods/relgoods.wxml-->
+<view class='container' style="height:{{windowHeight}}px">
+<form bindsubmit="resBook">
+ <view class='includeform'>
+  <view class='line1'>
+    <view class='title'>名称</view><view><input type='text' name='goodsName' auto-focus/></view>
+  </view>
+  <view class='line1'>
+      <view class='title'>种类</view>
+        <view class='thepicker'>
+          <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" name='goodsKinds'>
+              <view class="picker">{{array[index]}}</view>
+          </picker>
+        </view>
+    </view>
+  <view class='line1'>
+    <view class='title'>价格</view>
+    <view><input type='digit' placeholder='出售价格' name='price'/></view>
+  </view>
+  <view class='otherMsg'><text class='hand'>☛</text>描述(选填)</view>
+    <textarea 
+          placeholder="如新旧程度、是否可小刀、是否自取等(不超过30字)" 
+          adjust-position="true" 
+          name="otherMsg" 
+          class='booksOtherMsg'
+          show-confirm-bar="false"
+          cursor-spacing="100rpx"
+          maxlength="30"/>
+   <view class='otherMsg'><text class='hand'>☛</text>联系方式</view>
+   <textarea 
+          placeholder="推荐QQ，不建议电话,微信，要谨慎哦！" 
+          adjust-position="true" 
+          name="contact" 
+          class='booksOtherMsg'
+          show-confirm-bar="false"
+          cursor-spacing="100rpx"
+          maxlength="20"/>
+  <view class='showImg' bindtap='addImg'>
+    <text class='theBackMark' decode='true'>添加\n图片</text>
+    <image class='theImg' src='{{imgPath}}'/>
+  </view>
+    <button form-type="submit" class='btn-release'>发布</button>
+      </view>
+   </form>
+</view>

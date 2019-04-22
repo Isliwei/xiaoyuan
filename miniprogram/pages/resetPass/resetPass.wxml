@@ -1,0 +1,13 @@
+<view class='container'>
+ <form bindsubmit="changePass">
+  <view class='line'>
+    <view class='title'>新密码:<text>*</text></view><input type='text' maxlength='6' name='pass'/>
+  </view>
+  <view class='line'>
+    <view class='title'>确认密码:<text>*</text></view><input type='text' maxlength='6' name='pass2'/>
+  </view>
+  <view class='warmtext'>{{warmtext}}</view>
+  <button form-type="submit">确认</button>
+ </form>
+ 
+</view>

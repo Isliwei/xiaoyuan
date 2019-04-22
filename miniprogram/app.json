@@ -1,0 +1,38 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/index/index",
+    "pages/register/register",
+    "pages/login/login",
+    "pages/myRelease/myRelease",
+    "pages/showDetail/showDetail",
+    "pages/release/release",
+    "pages/relgoods/relgoods",
+    "pages/relbook/relbook",
+    "pages/users/users",
+    "pages/search/search",
+    "pages/idproving/idproving",
+    "pages/resetPass/resetPass",
+    "pages/systemwarm/systemwarm"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "注册",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    },{
+      "pagePath": "pages/release/release",
+      "text": "发布"
+    },{
+      "pagePath": "pages/users/users",
+      "text": "个人"
+    }
+    ]
+  }
+}

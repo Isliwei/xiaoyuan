@@ -1,0 +1,22 @@
+  <view class="test-bg">
+      <image src="../../images/login.jpg" class="bg-image" mode="scaleToFill"></image>
+  </view>
+  <form bindsubmit="loginform">
+    <text class='login-title'>用户登录</text>
+      <view class='loginview'>
+            <view class='login-line1'>
+                <view class='thetext'>手机号</view><input type="text" maxlength='11' name='tel' value='{{tel}}'/>
+            </view>
+            <view class='login-line2'>
+                <view class='thetext'>密码</view>
+                <input type="text" password='true' maxlength='6' name='password' adjust-position="true" value='{{password}}'/>
+            </view>
+        <button form-type="submit">登陆</button>
+      </view>
+     <view class='tips'>
+       <navigator url="../register/register" hover-class="navigator-hover" >注册</navigator>
+       <text style='margin:auto 30rpx'>|</text>
+       <navigator url="../idproving/idproving" hover-class="navigator-hover" >忘记密码?</navigator>
+    </view>
+  </form>
+    

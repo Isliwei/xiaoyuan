@@ -1,0 +1,12 @@
+<view class='container'>
+  <form bindsubmit="idproving">
+    <view class='line'>
+      <view class='title'>昵称:<text>*</text></view><input type='text' maxlength='5' name='name'/>
+    </view>
+    <view class='line'>
+      <view class='title'>手机号:<text>*</text></view><input type='text' maxlength='11' name='tel'/>
+    </view>
+    <view class='noPassWarm'>{{noPassWarm}}</view>
+    <button form-type="submit">确认</button>
+  </form>
+</view>

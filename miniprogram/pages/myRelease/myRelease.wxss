@@ -1,0 +1,43 @@
+.container{
+  width: 100%;
+}
+.showlist{
+  width: 95%;
+  display: inline-flex;
+  border-bottom: 1rpx dashed #CCCCCC;
+  padding-left:15rpx;
+  padding-top: 20rpx;
+  padding-bottom: 10rpx;
+  font-size: 90%;
+}
+.line2-left{
+  width: 60%;
+}
+.line2-right{
+  width: 40%;
+  display: inline-flex;
+}
+.line2-Msg{
+  display: inline-flex;
+  width: 100%;
+  margin-top: 5rpx;
+  padding-left: 10rpx;
+}
+.btn1{
+  height: 50rpx;
+  line-height: 40rpx;
+  font-size: 90%;
+  letter-spacing: 5rpx;
+  border-radius: 10rpx;
+  width: 150rpx;
+  margin-top: 40rpx;
+  margin-left: 70rpx;
+  padding-top: 5rpx;
+  background-color: rgba(202, 32, 245, 0.884);
+  color: #FFFFFF;
+}
+.del{
+  color: #CCCCCC;
+  font-size: 90%;
+  margin-top: 50rpx;
+}

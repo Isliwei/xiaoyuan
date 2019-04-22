@@ -1,0 +1,64 @@
+<view class='container' style='width:{{windowWidth}}px;height:{{windowHeight}}px'>
+  <form bindsubmit="formSubmit">
+   <view class='line' style='margin-top: 0rpx;'>
+      <view>昵称<text style='color:red'>*</text></view><br/>
+      <view class='line-input'>
+        <input type='text' name='name' maxlength='5' bindinput='getId' cursor-spacing='100rpx'/>
+        <icon type="success" size='20' style='display:{{nameIconIfShow}}'/>
+      </view><br/>
+      <view class='Marks'>3~5个字符，可使用字母、数字、符号</view>
+   </view>
+   <view class='line'>
+      <view>手机号<text style='color:red'>*</text></view><br/>
+      <view class='line-input'>
+        <input type='text' name='tel' maxlength='11' bindinput='getTel' cursor-spacing='100rpx'/>
+        <icon type="success" size='20' style='display:{{telIconIfShow}}'/>
+      </view>
+   </view>
+   <view class='line'>
+      <view>密码<text style='color:red'>*</text></view><br/>
+      <view class='line-input'>
+        <input type='password' name='password' maxlength='6' bindinput='getPass' cursor-spacing='100rpx'/>
+        <icon type="success" size='20' style='display:{{passIconIfShow}}'/>
+      </view>
+      <view class='Marks'>6个字符，只可使用数字</view>
+   </view>
+   <view class='line'>
+      <view>确认密码<text style='color:red'>*</text></view>
+      <view class='line-input'>
+        <input type='password' name='password2' maxlength='6' bindinput='getPass2' cursor-spacing='100rpx'/>
+        <icon type="success" size='20' style='display:{{pass2IconIfShow}}'/>
+      </view><br/>
+      <view class='Marks' style='color:{{passTipsStyle}}'>{{passTips}}</view>
+   </view>
+   <view class='line'>
+      <view>住址<text style='color:red'>*</text></view>
+      <view class='line-input'>
+      <picker
+        mode="multiSelector"
+        bindchange="bindMultiPickerChange"
+        bindcancel="bindMultiPickerCancel"
+        bindcolumnchange="bindMultiPickerColumnChange"
+        value="{{multiIndex}}"
+        range="{{multiArray}}"
+        name="pick"
+      >
+          <view class='picker' style='color:{{addressFontStyle}}'>
+            {{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}
+          </view>
+      </picker>
+      <icon type="success" size='20' style='display:{{addressIconIfShow}}'/>
+      </view><br/>
+      <view class='Marks' style='color:{{addressTipsStyle}}'>请选择地址</view><br/>
+      <view style='color:red'>{{errMess}}</view>
+  </view>
+  <button form-type="{{ifsubmit}}" class='btn-register' style='background-color:{{btncolor}}'>注册</button>
+  <view class='backToLogin'>
+      <navigator url='../login/login'>返回登陆</navigator>
+      <text style='margin-left:5rpx;margin-right:5rpx;'>|</text>
+      <view bindtap='backToIndex'>首页</view>     
+  </view>
+  
+  
+ </form>
+</view>

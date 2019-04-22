@@ -1,0 +1,23 @@
+<view class='container'>
+   <view class='showlist' wx:for="{{myRelArray}}" wx:key="key">
+        <view class='line2-left'>
+          <view class='line2-Msg'>
+            <view style='margin-right:20rpx;color:#696969'>名称</view>
+            <view style='color:	#0000CD;'>{{item.goodsName}}</view>
+          </view>
+          <view class='line2-Msg'>
+            <view style='margin-right:20rpx;color:#696969'>时间</view>
+            <view style='color:	#696969;'>{{item.time}}</view>
+          </view>
+        </view>
+        <view class='line2-right'>
+            <button class='btn1' 
+                    bindtap="showDetail" 
+                    data-ownid="{{item._id}}" 
+                    data-type='{{item.type}}'>
+                    详情
+            </button>
+            <view class='del' bindtap='delThisMsg' data-doc_id='{{item._id}}' data-index="{{index}}">删除</view>
+        </view>
+   </view>
+</view>

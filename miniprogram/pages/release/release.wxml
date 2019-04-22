@@ -1,0 +1,12 @@
+<view class='container' style='width:{{windowWidth}}px;height:{{windowHeight}}px'>
+ <navigator url='../relbook/relbook'>
+  <view class='book'>
+      <view class='thetext'>书本</view>
+  </view>
+ </navigator>
+ <navigator url='../relgoods/relgoods'>
+   <view class='good'>
+      <view class='thetext'>物品</view>
+  </view>
+  </navigator>
+</view>

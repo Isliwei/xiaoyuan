@@ -1,0 +1,55 @@
+<wxs src="../../wxs/subutil.wxs" module="tools" />
+<view class='container'>
+      <swiper
+        indicator-dots="true"
+        autoplay="true"
+        interval="3000"
+        duration="1000"
+        circular="true"
+        indicator-color="#FFFFFF"
+      >
+          <block wx:for="{{imgUrls}}" wx:key="key">
+            <swiper-item>
+            <image src="{{item}}" mode="widthFix" bindload="imageLoad" 
+                   style="width: {{imageWidth}}px;height:{{imageHeight}};" />
+            </swiper-item>
+          </block>
+       </swiper>
+   <view class='search'>
+        <input type='text' placeholder='请输入关键词' bindinput='getfind'/>
+        <icon type='search' size='20' color='#FFFFFF' bindtap='findThings'/>
+   </view>
+   <view class='classify'>
+      <view class='commodity' bindtap='searchbook'>
+        <navigator url="../search/search?type=book">书本</navigator>
+      </view>
+      <view class='books' bindtap='searchbook'>
+        <navigator url="../search/search?type=good">物品</navigator>
+      </view>
+   </view>
+   <view class='showAllMsg'>
+      <navigator class='navtor'>全部信息</navigator>
+   </view>
+  <view class='showlist'  wx:for="{{showMsg}}" wx:key="key">
+      <view class='line1'>
+        <view class='thename'>{{tools.subname(item.thename)}}</view>
+        <view>{{tools.subtime(item.time)}}</view>
+      </view>
+   <view class='line2'>
+        <view class='line2-left'>
+          <view class='line2-Msg'>
+            <view style='margin-right:20rpx;color:#696969'>种类</view>
+            <view style='color:	#0000CD	'>{{item.theKinds}}</view>
+          </view>
+          <view class='line2-Msg'>
+            <view style='margin-right:20rpx;color:#696969'>名称</view>
+            <view style='color:	#0000CD;'>{{item.goodsName}}</view>
+          </view>
+        </view>
+        <view class='line2-right'>
+            <button class='btn1' bindtap="showDetail" data-ownid="{{item._id}}" data-type='{{item.type}}'>去看看</button>
+        </view>
+   </view>
+  </view>
+  
+</view>

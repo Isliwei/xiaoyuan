@@ -1,0 +1,33 @@
+<view class='container' style='width:{{windowWidth}}px;height:{{windowHeight}}px'> 
+   <view class='show'>
+    <view class='topMsg'>详细信息</view>
+    <view class='line1' style='border-radius: 20rpx 20rpx 0 0;display:{{ifshowbook}};'>
+      <view class='title'>书名</view><view>{{detailArray.goodsName}}</view>
+    </view><br/>
+    <view class='line1' style='display:{{ifshowbook}};'>
+      <view class='title'>作者</view><view>{{detailArray.bookAuthor}}</view>
+    </view><br/>
+    <view class='line1' style='display:{{ifshowbook}};'>
+      <view class='title'>版本</view><view>{{detailArray.bookVersion}}</view>
+    </view><br/>
+    <view class='line1' style='display:{{ifshowbook}};'>
+      <view class='title'>笔记</view><view>{{detailArray.haveNotes}}</view>
+    </view>
+    <view class='line1' style='border-radius: 0 0 20rpx 20rpx ;display:{{ifshowbook}};'>
+      <view class='title'>价格</view><view>{{detailArray.price}}</view>
+    </view><br/>
+     <view class='line2' style='border-radius: 20rpx 20rpx 0 0;display:{{ifshowgood}};'>
+      <view class='title'>名称</view><view>{{detailArray.goodsName}}</view>
+    </view><br/> 
+     <view class='line2' style='border-radius: 0 0 20rpx 20rpx;display:{{ifshowgood}};'>
+      <view class='title'>价格</view><view>{{detailArray.price}}</view>
+    </view><br/> 
+   
+   <view class='otherMsg'><text class='hand'>☛</text>其他信息</view>
+   <view class='thedetail'>{{detailArray.otherMsg}}</view>
+   <view class='otherMsg'><text class='hand'>☛</text>联系方式</view>
+   <view class='thedetail'>{{detailArray.contact}}</view>
+   <view class='otherMsg'><text class='hand'>☛</text>图片</view>
+   <view class='thedetail'>图片展示</view>
+  </view>
+</view>

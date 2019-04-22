@@ -1,0 +1,4 @@
+.container view{
+  margin-top: 20rpx;
+  font-family: '隶书';
+}

@@ -1,0 +1,45 @@
+.container{
+  background:linear-gradient(to right,rgba(148,0,211, 0.884) ,rgba(	255,105,180, 0.884));
+}
+.show{
+  width: 100%;
+}
+.topMsg{
+  font-weight: bold;
+  font-family: 隶书;
+  font-size: 130%;
+  letter-spacing: 15rpx;
+  text-align: center;
+  color: #FFFFFF;
+}
+.line1,.line2{
+  width: 94%;
+  margin-left: 3%;
+  display: inline-flex;
+  margin-bottom: 2rpx;
+  background-color: rgb(238, 236, 236);
+}
+.title{
+  margin: 5rpx 20rpx;
+  letter-spacing: 10rpx;
+  font-family: 隶书;
+  color: #585757;
+  font-size: 100%;
+}
+.otherMsg{
+  font-family: 隶书;
+  letter-spacing: 5rpx;
+  color: #FFFFFF;
+}
+.thedetail{
+  width: 90%;
+  height: 200rpx;
+  margin: auto;
+  padding: 10rpx 20rpx;
+  border-radius: 20rpx;
+  padding-left: 10rpx;
+  background-color: #FFFFFF;
+}
+.hand{
+  color: #FFFFFF;
+}

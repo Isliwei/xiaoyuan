@@ -1,0 +1,33 @@
+.container{
+  width: 100%;
+  padding: 100rpx 30rpx;
+}
+.line{
+  display: inline-flex;
+  margin-top: 50rpx;
+}
+input{
+  border: 1rpx solid #CCCCCC;
+}
+.title{
+  width: 200rpx;
+}
+text{
+  color: #FF0000;
+}
+button{
+  width: 40%;
+  color: #FFFFFF;
+  background-color: #32CD32;
+  line-height: 60rpx;
+  padding:auto 10rpx; 
+  margin-top: 100rpx;
+  letter-spacing: 20rpx;
+  font-weight: bold;
+}
+.warmtext{
+  color: #FF0000;
+  margin-left: 200rpx;
+  margin-top: 50rpx;
+  font-size: 80%;
+}

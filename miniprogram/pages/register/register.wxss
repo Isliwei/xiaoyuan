@@ -1,0 +1,50 @@
+.container{
+  padding-top: 30rpx;
+  background: linear-gradient(to top right,rgba(255,255,255, 0.884),rgba(	169,169,169, 0.637));
+}
+input{
+  border-bottom: 3rpx solid #FFFFFF;
+  width: 90%;
+  margin-top: 5rpx;
+}
+picker{
+  border-bottom: 3rpx solid #FFFFFF;
+  width: 90%;
+}
+.picker{
+  color: red;
+}
+.line{
+  margin:auto;
+  width: 90%;
+  margin-top: 30rpx;
+}
+.line-input{
+  display: inline-flex;
+  width: 100%;
+}
+.btn-register{
+  width: 40%;
+  background-color: #32CD32;
+  color: #FFFFFF;
+  letter-spacing: 30rpx;
+  font-weight: bold;
+  border: #CCCCCC;
+  margin-top: 100rpx;
+}
+icon{
+  margin-left: 30rpx;
+  margin-top: 10rpx;
+}
+.Marks{
+  font-size: 80%;
+  color: #696969;
+}
+.backToLogin{
+  width: 30%;
+  color: 	#1E90FF;
+  font-size: 90%;
+  margin-top: 20rpx;
+  display: inline-flex;
+  margin-left: 35%;
+}
